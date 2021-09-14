@@ -58,6 +58,22 @@
   display: block;
 }
 
+._icon-google-plus:before {
+  content: "\ea8b";
+}
+
+._icon-facebook:before {
+  content: "\ea90";
+}
+
+._icon-twitter:before {
+  content: "\ea96";
+}
+
+._icon-linkedin2:before {
+  content: "\eaca";
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -1079,9 +1095,30 @@ body.ie ._ibg img {
 .social-footer__mail:hover {
   color: #ffd723;
 }
+@media (max-width: 479.98px) {
+  .social-footer__mail {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
 
 .social-footer__links {
   margin: 25px 0px 0px 0px;
+  display: flex;
+}
+
+.social-footer__links a {
+  margin: 0px 12px 0px 0px;
+  font-size: 20px;
+  padding: 10px;
+  color: #5e6648;
+  background: #444a34;
+  transition: all 0.3s ease 0s;
+  border-radius: 50%;
+}
+.social-footer__links a:hover {
+  background: #ffd723;
+  color: #fff;
 }
 
 .footer__logoCopy {
@@ -1431,7 +1468,7 @@ body.ie ._ibg img {
     padding: 0px 10px 150px 10px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 790px) {
   .develop {
     flex-direction: column;
     padding: 0px 10px 100px 10px;
@@ -1530,6 +1567,7 @@ body.ie ._ibg img {
 .quote-develop__avatar {
   border-radius: 50%;
   margin-right: 30px;
+  min-width: 91px;
   box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
 }
 @media (max-width: 479.98px) {
